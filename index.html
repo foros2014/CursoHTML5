@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Truecar</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <link rel="stylesheet" href="mobile/jquery.mobile-1.4.2.min.css">
+        <link rel="stylesheet" href="estilos2.css">
+        <script src="jquery-1.11.0.js"></script>
+        <script src="mobile/jquery.mobile-1.4.2.min.js"></script>
+        <script src="fastclick.js"></script>
+        <script src="script.js"></script>
+        <style>
+            .mi-block-a, 
+            .mi-block-b 
+            {
+                background-color: white;
+                border: 1px solid lightgrey;
+                font-weight: bold;
+                text-align: center;
+                color: navy;
+            }
+            .mi-block-a {
+                border-left:0; 
+            }
+            .mi-block-b {
+                border-right:0;
+            }
+        </style>
+    </head>
+<body>
+        <div data-role="page" id="pag1">
+            <div data-role="header" data-position="fixed" id="cabecera">
+                <a href="#" id="a1" class="ui-btn ui-icon-bars ui-btn-icon-left ui-btn-icon-notext ui-nodisc-icon"></a>
+                <h1 id="c1">
+                    <span id="gordo">TRUE</span>Car
+                </h1>
+                <a href="#" id="a2">Sign In</a>
+            </div>
+            <div data-role="main" class="ui-content" id="cuerpo">
+                   <h2 id="c2">Never OverPay</h2>
+                   <span id="texto">TrueCar users save an average of $3,046 off MS</span>
+                   <ul data-role="listview" data-inset="true">
+                        <li><a href="#pag2" data-transition="none" class="ui-btn ui-icon-carat-d ui-btn-icon-right ui-nodisc-icon ui-alt-icon">Select a Make</a></li>
+                        <li><a href="#" class="ui-btn ui-icon-carat-d ui-btn-icon-right ui-nodisc-icon ui-alt-icon">Select a Model</a></li>
+                        <li><a href="#" class="ui-btn ui-icon-arrow-u-r ui-btn-icon-right ui-nodisc-icon ui-alt-icon">Enter ZIP Code</a></li>
+                    </ul>
+                    <!--<input type="button" value="Next >">-->
+                    <!--<button id="elboton">Next ></button>-->
+                    <a href="#pag2" id="elboton" class="ui-btn">Next ></a>
+                
+                    <button id="otroboton" class="ui-btn ui-corner-all ui-btn-inline">How Its Work</button>
+
+            </div>
+            
+
+            <div data-role="footer" data-position="fixed" id="pie">
+            </div>
+        </div>
+        <div data-role="page" id="pag2">
+            <div data-role="header" data-position="fixed" id="cabecera">
+                <a href="#" id="a4" class="ui-btn ui-icon-bars ui-btn-icon-left ui-btn-icon-notext ui-nodisc-icon"></a>
+                <h1 id="c1">
+                Price Report
+                </h1>
+                <a href="#pag1" id="a6"  data-transition="none" class="ui-btn ui-icon-home ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon"></a>
+            </div>
+            <div data-role="main" class="ui-content" id="cuerpo">
+                   <!--<h3 id="c4">2013 Audi A3</h3>-->
+                   <!--<hr style="border:1px dotted grey;"/>-->
+                   <img src="f3q.jpg">
+                   <a href="#" class="ui-btn ui-icon-carat-d ui-btn-icon-right ui-nodisc-icon ui-alt-icon">2.0T FWD manual Premium</a>
+                   <div class="ui-grid-a">
+                       <div class="ui-block-a mi-block-a"><p>Color And Options</p></div>
+                       <div class="ui-block-b mi-block-b"><p>Incentives</p></div>
+                   </div>
+                
+                   <div class="ui-grid-a">
+                       <div class="ui-block-a">
+                           <div class="ui-grid-a">
+                               <div class="ui-block-b">texto1</div>
+                               <div class="ui-block-c">texto2</div>
+                           </div>
+                       </div>
+                       <div class="ui-block-b">Texto</div>
+                   </div>
+                
+                   <div id="publi" style="background-color:navy;color:white;"><p>Parrafada</p></div>
+                   <div id="img" style="width:auto"><img src="grafica.jpg"></div>
+                   
+            </div>
+        </div>
+</body>
+</html>
